@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "闪卡-学习卡片"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "闪卡"
+    }
+  ]
+}
