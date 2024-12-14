@@ -1,8 +1,11 @@
 import { router } from '@kit.ArkUI';
+import { GlobalVariable } from '../commons/constants/Index';
 
 @Entry
 @Component
 struct WelcomePage {
+  @StorageProp(GlobalVariable.TOP_HEIGHT) topHeight: number = 0
+  @StorageProp(GlobalVariable.BOTTOM_HEIGHT) bottomHeight: number = 0
   @State countDownSeconds: number = 3
   timeId: number = 0
 
@@ -69,6 +72,6 @@ struct WelcomePage {
       colors: [[Color.White, 0], ['#ff2f9cdd', 1]],
       direction: GradientDirection.Top
     })
-
+    .padding({ top: this.topHeight, bottom: this.bottomHeight })
   }
 }
