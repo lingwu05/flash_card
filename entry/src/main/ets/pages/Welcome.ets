@@ -6,7 +6,7 @@ import { GlobalVariable } from '../commons/constants/Index';
 struct WelcomePage {
   @StorageProp(GlobalVariable.TOP_HEIGHT) topHeight: number = 0
   @StorageProp(GlobalVariable.BOTTOM_HEIGHT) bottomHeight: number = 0
-  @State countDownSeconds: number = 3
+  @State countDownSeconds: number = 0
   timeId: number = 0
 
   onPageShow(): void {
